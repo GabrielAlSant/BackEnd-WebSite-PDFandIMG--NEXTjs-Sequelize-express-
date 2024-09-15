@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(fileUpload());
 
+
 app.get("/", (req, res) => res.type('html').send(html));
 
 app.get("/produtos", async function (req, res){
